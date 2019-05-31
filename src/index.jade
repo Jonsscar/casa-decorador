@@ -5,19 +5,55 @@ block content
         section.home__hero
             .container
                 .row
+                    .col-24.col-sm-16
+                         img.home__hero__image(src='https://picsum.photos/id/123/600/400')
                     .col-24.col-sm-8
-                        h1.home__hero__title hola mundo
-                        h1.home__hero__title.home__hero__title--red hola mundo 2
-                    .col-24.col-sm-8
-                        h2.home__hero__subtitle soy oscar
-                    .col-24.col-sm-8
+                        form.home__hero__datos
+                            .row
+                                .col
+                                    input.home__hero__datos(type='text', placeholder='Nombre completo')  
+                                    input.home__hero__datos(type='text', placeholder='Telefono')   
+                                    input#correo.home__hero__datos(type='email', placeholder='nombre@correo.com')
+                                    button.home__hero__btn(type='submit') Enviar
+                        
         
         section.home__nosotros
             .container
                 .row
                     .col-24.col-sm-8
-                        h2.home__nosotros__title hola mundo
-                    .col-24.col-sm-8
-                        p2.home__nosotros__text soy oscar
-                    .col-24.col-sm-8
                         img.home__nosotros__image(src='https://picsum.photos/id/123/600/400')
+                    .col-24.col-sm-16
+                        p2.home__nosotros__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, dolore est veniam veritatis provident excepturi officia, voluptas modi culpa eius consequuntur. Consectetur cupiditate eos in omnis quae ipsa quo blanditiis.
+                .row
+                    .col-24.col-sm-4
+                            a.home__nosotros (href='#')
+                                img.home__nosotros__image(src='https://picsum.photos/id/123/600/400') 
+                    .col-24.col-sm-8
+                            p2.home__nosotros__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, earum, ducimus assumenda sequi vitae consectetur modi et cupiditate doloremque animi asperiores, eos ipsam excepturi sed alias cumque eum? Error, amet.
+                    .col-24.col-sm-4
+                            a.home__nosotros (href='#')
+                                img.home__nosotros__image(src='https://picsum.photos/id/123/600/400')
+                    .col-24.col-sm-8
+                            p2.home__nosotros__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat distinctio quas eveniet eius sit earum neque aut id eaque alias exercitationem, in laboriosam accusamus deleniti assumenda. Voluptatum, possimus dicta?
+                        
+                            
+
+                       
+        section.home__servicios
+            .container
+                .row   
+                    .col-24.col-sm-8
+                        h2.home__servicios__title LOREM IPSUM DOLOR
+                        ul   
+                            li Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            li Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            li Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    .col-24.col-sm-8
+                        h1.home__servicios__Ebook EBOOK 
+                    .col-24.col-sm-8
+                        form.home__servicios__datos
+                            .row
+                                .col
+                                    input.home__servicios__datos(type='text', placeholder='Nombre completo')   
+                                    input#correo.home__servicios__datos(type='email', placeholder='nombre@correo.com')
+                                    button.home__servicios__btn(type='submit') Descargar          
