@@ -1,28 +1,106 @@
 .home {
-    &__hero {
-        padding: 5% 0;
-        background: $lightestGray;
-        color: $darkGray;
-        &__image {
-            max-width:100%;
-        }
-        &__title {
-            color: $mainColor;
-
-            &--red {
-                color: red;
-            }
-        }
-
+    .container {
+        padding: 0%;
     }
-
+    &__hero {
+        margin-top: 10%;
+        padding: 5%;
+        background: $lightGray;
+        color: $pink;
+        &__image {
+            width:100%;
+        }
+    }
     &__nosotros {
-        padding: 5% 0;
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        padding: 5%;
+        background: $lightGray;
+        &__image {
+            width:100%;
+        }
+    }
+    &__nosotros2 {
+        padding: 5%;
+        background: $mainColor;
+        &__image {
+            width:100%;
+        }
+    }
+    &__service {
+        margin-bottom: 10%;
+        padding: 5%;
+        background: $lightGray;
+        background: $lightGray;
+        color: $pink;
+        &__image {
+            width:100%;
+        }
+    }
+    &__service__list {
+        padding: 5%;
         background: $mainColor;
         color: $white;
-
-        &__image {
-            max-width:100%;
+        h2 {
+            font-family: $titleFont;
+            text-align: center;
+            font-weight: 400;
         }
+        li {
+            font-family: $mainFont;
+            font-weight: 400;
+        }    
     }
+    &__service__ebook {
+        margin-top: 5%;
+        }
+    &__form {
+        margin-top: 5%;
+        padding: 5%;
+        background: $white;
+        color: $black;
+    }
+    &__form-group {
+        padding-bottom: 3%;
+        }
+    &__form-input {  
+        padding-bottom: 0;
+    }
+    &__form-label {  
+        padding-bottom: 0;
+    }
+    &__form-submit {
+            padding-bottom: 0;
+    }   
+    & input {
+        border-bottom: 3px solid $mainColor;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        outline: none;  
+        font-size: 1em;
+        color:$black; 
+    }
+    & button {
+        background: $mainColor;
+        margin: auto;
+        color: $white;
+        border: none;
+        border-radius: 0.5em;
+        padding: 3%;
+        cursor: pointer;
+    }
+    p {
+        width: 100%;
+        font-family: $mainFont;
+        font-weight: 400;
+        color: $black;
+        text-align: justify;
+    } 
 }
+      
+            // @include mq(sm) {
+            //     max-width:50%;
+            // }
