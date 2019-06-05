@@ -1,56 +1,75 @@
 .landing {
-    .container {
-        padding: 5%;
-        margin: 0;
-    }
-    .row{
-        margin: 0;
-    }
+    background: $mainColor;
     &__hero {
-        // padding: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
         background: $lightGray;
-        color: $pink;
         &__image {
-            width:100%;
+            width: 100%;
+            min-width: 260px;
+            margin-bottom: 10%;
         }
     }
+    & img {
+        max-width:100%;
+        vertical-align: top;
+    }
     &__form {
+        margin:auto;
         padding: 5%;
         background: $mainColor;
         color: $black;
         width:100%;
-        height: 100%;
+        min-width: 260px;
+        line-height: 1.5em;
+    }
+    &__form-group {
+        width: 100%;
     }
     & input {
+        display: block;
+        width: 100%;
+        padding: 2%;
+        margin-bottom: 2%;
         background: $white;
         line-height: 1.5em;
-        border-bottom: 3px solid $mainColor;
-        border-left: none;
-        border-top: none;
-        border-right: none;
         outline: none;  
+        font-family: $mainFont;
         font-size: 1em;
         color:$black; 
+        border: none;
+         :focus {
+            border: 1% solid $black;
+        }
         
     }
-    & button {
+    & label {
+        line-height: 1.5em;
+        outline: none;  
+        font-size: 1em;
+        color:$black;
+        font-family: $mainFont;
+        font-weight: 700; 
+        
+    }
+    &__form-submit {
         background: $black;
-        margin: auto;
+        width: 30%;
+        margin-left: 60%;
         color: $white;
+        font-size: 1em;
         border: none;
         border-radius: 0.5em;
         padding: 3%;
         cursor: pointer;
     }
-    
     &__items {
+        margin: 5%;
+        padding: 5%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 5%;
-        // padding: 5%;
-        background: $mainColor;
-        width: 100%;    
+        justify-content: space-between;  
+        border: 1px solid $lightGray;  
     }
     &__items__icon{
         padding: 5%;
@@ -63,8 +82,7 @@
         background: $white;
     }
     i {
-        font-size: 3em;
-        font-weight: 400;
+        font-size: 2.5em;
         color: $white;
         text-align: center;
     }
@@ -76,7 +94,7 @@
         text-align: justify;
     } 
 }
-      
+    
             // @include mq(sm) {
             //     max-width:50%;
             // }
